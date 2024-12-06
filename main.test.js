@@ -10,7 +10,7 @@ import {
   grossProfitMargin,
   netProfitMargin,
   workingCapitalRatio,
-} from "./main.js";
+} from "./lib/functions.js";
 
 // Sample data for testing
 const mockData = [
@@ -54,7 +54,7 @@ describe("Financial Calculations", () => {
   });
 
   test("calculates gross profit margin correctly", () => {
-    const salesDebit = 0; 
+    const salesDebit = 0;
     const expectedGrossProfitMargin = (salesDebit / 3000) * 100;
     expect(grossProfitMargin(mockData)).toBeCloseTo(expectedGrossProfitMargin);
   });
