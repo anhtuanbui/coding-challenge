@@ -3,6 +3,7 @@ The solutions contain two main files including main.js and main.test.js
 
 ## To run the code
 - Running the code requires nodejs
+- Visit https://nodejs.org/en for nodejs installation
 - Run `node main` in the terminal to run the code
 
 ## For testing 
@@ -13,8 +14,6 @@ The solutions contain two main files including main.js and main.test.js
 Regard to notes in the code for details. Any problem please get in touch with me at anhtuan128@gmail.com.
 
 __Thank you!!! 🙏__
-
-
 
 #
 
