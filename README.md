@@ -15,7 +15,7 @@ Regarding notes in the code for details. Any problem please get in touch with me
 
 ## UI application
 
-- You may want to check out the application with Web UI created using NextJS, Shadcn UI, and Typescripts at 
+- You may want to check out the application with Web UI created using NextJS, Shadcn UI, and Typescripts at https://github.com/anhtuanbui/coding-challenge-ui
 
 __Thank you!!! 🙏__
 
