@@ -11,6 +11,7 @@ import {
   netProfitMargin,
   workingCapitalRatio,
 } from "./lib/functions.js";
+import { formatCurrency, formatPercentage } from "./lib/utils.js";
 
 // Sample data for testing
 const mockData = [
@@ -69,6 +70,41 @@ describe("Financial Calculations", () => {
     const liabilities = 300 - 100; // Liabilities = Liabilities Credit - Liabilities Debit
     const expectedWorkingCapitalRatio = assets / liabilities;
     expect(workingCapitalRatio(mockData)).toBeCloseTo(
+      expectedWorkingCapitalRatio
+    );
+  });
+});
+
+describe("Currency Formatting", () => {
+  test("formats revenue correctly", () => {
+    const expectedRevenue = "$3,000";
+    expect(formatCurrency(revenue(mockData))).toBe(expectedRevenue);
+  });
+
+  test("formats expenses correctly", () => {
+    const expectedExpenses = "$800";
+    expect(formatCurrency(expenses(mockData))).toBe(expectedExpenses);
+  });
+});
+
+describe("Percentage Formatting", () => {
+  test("formats gross profit margin correctly", () => {
+    const expectedGrossProfitMargin = "0.0%";
+    expect(formatPercentage(0)).toBe(
+      expectedGrossProfitMargin
+    );
+  });
+
+  test("formats net profit margin correctly", () => {
+    const expectedNetProfitMargin = "73.3%";
+    expect(formatPercentage(0.7333)).toBe(
+      expectedNetProfitMargin
+    );
+  });
+
+  test("formats working capital ratio correctly", () => {
+    const expectedWorkingCapitalRatio = "650.0%";
+    expect(formatPercentage(6.5)).toBe(
       expectedWorkingCapitalRatio
     );
   });

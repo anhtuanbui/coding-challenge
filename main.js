@@ -10,11 +10,14 @@ import {
   grossProfitMargin,
   netProfitMargin,
   workingCapitalRatio,
+} from "./lib/functions.js";
+
+import {
   formatCurrency,
   formatPercentage,
-  yellowText,
   greenText,
-} from "./lib/functions.js";
+  yellowText,
+} from "./lib/utils.js";
 
 // reading the file
 var jsonData;
