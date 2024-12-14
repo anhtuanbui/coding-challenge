@@ -17,7 +17,7 @@ Check out the UI solution at https://anhtuanbui.github.io/coding-challenge/
 
 You may also want to check out the application with Web UI created using NextJS, Shadcn UI, and Typescripts at https://github.com/anhtuanbui/coding-challenge-ui
 
-The result should show as following"
+The result should show as following:
 
 ```
 Coding Chalenge
