@@ -4,9 +4,9 @@ import {
   grossProfitMargin,
   netProfitMargin,
   workingCapitalRatio,
-} from "../lib/functions.js";
+} from "./lib/functions.js";
 
-import { formatCurrency, formatPercentage } from "../lib/utils.js";
+import { formatCurrency, formatPercentage } from "./lib/utils.js";
 
 fetch("data/data.json")
   .then((response) => response.json())

@@ -10,8 +10,8 @@ import {
   grossProfitMargin,
   netProfitMargin,
   workingCapitalRatio,
-} from "./lib/functions.js";
-import { formatCurrency, formatPercentage } from "./lib/utils.js";
+} from "./docs/lib/functions.js";
+import { formatCurrency, formatPercentage } from "./docs/lib/utils.js";
 
 // Sample data for testing
 const mockData = [
@@ -90,22 +90,16 @@ describe("Currency Formatting", () => {
 describe("Percentage Formatting", () => {
   test("formats gross profit margin correctly", () => {
     const expectedGrossProfitMargin = "0.0%";
-    expect(formatPercentage(0)).toBe(
-      expectedGrossProfitMargin
-    );
+    expect(formatPercentage(0)).toBe(expectedGrossProfitMargin);
   });
 
   test("formats net profit margin correctly", () => {
     const expectedNetProfitMargin = "73.3%";
-    expect(formatPercentage(0.7333)).toBe(
-      expectedNetProfitMargin
-    );
+    expect(formatPercentage(0.7333)).toBe(expectedNetProfitMargin);
   });
 
   test("formats working capital ratio correctly", () => {
     const expectedWorkingCapitalRatio = "650.0%";
-    expect(formatPercentage(6.5)).toBe(
-      expectedWorkingCapitalRatio
-    );
+    expect(formatPercentage(6.5)).toBe(expectedWorkingCapitalRatio);
   });
 });
